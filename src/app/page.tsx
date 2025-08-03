@@ -7,9 +7,6 @@ export default function Home() {
   const [red, setRed] = useState<number>(50)
   const [green, setGreen] = useState<number>(50)
   const [blue, setBlue] = useState<number>(50)
-  const [hex, setHex] = useState<string>("")
-  const [rgb, setRgb] = useState<string>("")
-  const [hsl, setHsl] = useState<string>("")
   const [copiedMessage, setCopiedMessage] = useState<string>("")
 
   const handleClick = () => {
@@ -19,9 +16,6 @@ export default function Home() {
     setRed(randomRed)
     setGreen(randomGreen)
     setBlue(randomBlue)
-    setHex(`#${randomRed.toString(16).padStart(2, "0")}${randomGreen.toString(16).padStart(2, "0")}${randomBlue.toString(16).padStart(2, "0")}`)
-    setRgb(`rgb(${randomRed},${randomGreen},${randomBlue})`)
-    setHsl(rgbToHsl(randomRed, randomGreen, randomBlue))
   }
 
   const copyToClipboard = async (text: string, format: string) => {
