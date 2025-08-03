@@ -4,9 +4,9 @@ import { useState } from "react"
 import rgbToHsl from "@/app/lib/hslConverter"
 
 export default function Home() {
-  const [red, setRed] = useState<number>(50)
-  const [green, setGreen] = useState<number>(50)
-  const [blue, setBlue] = useState<number>(50)
+  const [red, setRed] = useState<number>(193)
+  const [green, setGreen] = useState<number>(166)
+  const [blue, setBlue] = useState<number>(213)
   const [copiedMessage, setCopiedMessage] = useState<string>("")
 
   const handleClick = () => {
